@@ -252,7 +252,7 @@ const components = {
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto font-weight-bold">
                         <span>copyright &copy; 2026 - developed by
-                            <b><a href="#" target="_blank">Antigravity</a></b>
+                            <b><a href="#" target="_blank">CCS OJT / Co Author Christopher Panoy</a></b>
                         </span>
                     </div>
                 </div>
