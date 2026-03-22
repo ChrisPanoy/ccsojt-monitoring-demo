@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>OJT-MS Demo Router</title>
+</head>
+<body>
+    <script>
+        const userType = localStorage.getItem('userType');
+        if (userType === 'Admin') {
+            window.location.href = 'admin/dashboard.html';
+        } else if (userType === 'Student') {
+            window.location.href = 'student/dashboard.html';
+        } else if (userType === 'ClassTeacher') {
+            window.location.href = 'teacher/dashboard.html';
+        } else {
+            // Default landing page is Student Dashboard as requested
+            // But usually we set the userType to Student first for demo convenience
+            localStorage.setItem('userType', 'Student');
+            localStorage.setItem('userName', 'Demo Student');
+            window.location.href = 'student/dashboard.html';
+        }
+    </script>
+</body>
+</html>

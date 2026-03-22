@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="../img/logo/attnlg.jpg" rel="icon">
+  <title>Admin Inbox - Demo</title>
+  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/ruang-admin.min.css" rel="stylesheet">
+  <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+</head>
+<body id="page-top">
+  <div id="wrapper">
+    <div id="sidebar-container"></div>
+    <div id="content-wrapper" class="d-flex flex-column">
+      <div id="content">
+        <div id="topbar-container"></div>
+        <div class="container-fluid" id="container-wrapper">
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Admin Inbox</h1>
+          </div>
+          <div class="card mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Messages from Students</h6>
+            </div>
+            <div class="table-responsive p-3">
+              <table class="table align-items-center table-flush" id="dataTableHover">
+                <thead class="thead-light">
+                  <tr>
+                    <th>From (Student)</th>
+                    <th>Subject</th>
+                    <th>Date Sent</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Demo Student (2021-0001)</td>
+                    <td>Inquiry regarding hours</td>
+                    <td>2026-03-22 10:00 AM</td>
+                    <td><span class="badge badge-warning">Unread</span></td>
+                    <td>
+                        <button class="btn btn-sm btn-info" onclick="alert('Viewing message content: Hi Admin, just following up on my OT approval...')">View Message</button>
+                        <button class="btn btn-sm btn-success" onclick="alert('Marking as resolved...')"><i class="fas fa-check"></i></button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer-container"></div>
+    </div>
+  </div>
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/ruang-admin.min.js"></script>
+  <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
+  <script src="../js/components.js"></script>
+  <script>$(document).ready(function () { $('#dataTableHover').DataTable(); });</script>
+</body>
+</html>

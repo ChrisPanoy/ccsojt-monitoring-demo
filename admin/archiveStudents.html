@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="../img/logo/attnlg.jpg" rel="icon">
+  <title>Archived Students - Demo</title>
+  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/ruang-admin.min.css" rel="stylesheet">
+  <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+</head>
+<body id="page-top">
+  <div id="wrapper">
+    <div id="sidebar-container"></div>
+    <div id="content-wrapper" class="d-flex flex-column">
+      <div id="content">
+        <div id="topbar-container"></div>
+        <div class="container-fluid" id="container-wrapper">
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Archived Students</h1>
+          </div>
+          <div class="card mb-4">
+            <div class="table-responsive p-3">
+              <table class="table align-items-center table-flush" id="dataTableHover">
+                <thead class="thead-light">
+                  <tr>
+                    <th>Student ID</th>
+                    <th>Name</th>
+                    <th>Course</th>
+                    <th>Date Archived</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2020-1234</td>
+                    <td>John Doe</td>
+                    <td>BSIT - 4A</td>
+                    <td>2026-01-15</td>
+                    <td><button class="btn btn-sm btn-success" onclick="alert('Student Restored (Demo)')">Restore</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer-container"></div>
+    </div>
+  </div>
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/ruang-admin.min.js"></script>
+  <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
+  <script src="../js/components.js"></script>
+  <script>$(document).ready(function () { $('#dataTableHover').DataTable(); });</script>
+</body>
+</html>

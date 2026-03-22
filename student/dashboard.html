@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="../img/logo/attnlg.jpg" rel="icon">
+  <title>Student Dashboard - Demo</title>
+  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/ruang-admin.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-5px); }
+      50% { transform: translateX(5px); }
+      75% { transform: translateX(-5px); }
+      100% { transform: translateX(0); }
+    }
+    .shake { animation: shake 0.5s ease-in-out infinite; }
+    .announcement-card { border-radius: 1.5rem; transition: all 0.3s; }
+    .announcement-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+  </style>
+</head>
+
+<body id="page-top" class="bg-gray-100">
+  <div id="wrapper">
+    <div id="content-wrapper" class="flex flex-col w-full">
+      <div id="content">
+        <!-- TopBar -->
+        <div id="topbar-container"></div>
+        
+        <!-- Container Fluid-->
+        <div class="container mx-auto p-4 sm:p-6 lg:p-8">
+          <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
+            <div>
+              <h1 class="text-3xl font-extrabold text-gray-900 tracking-tight">Student Dashboard</h1>
+              <p class="text-gray-500 font-medium">Class Section: BSIT - 4A</p>
+            </div>
+            <nav class="flex mt-4 md:mt-0" aria-label="Breadcrumb">
+              <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                <li class="inline-flex items-center">
+                  <a href="#" class="text-blue-600 hover:text-blue-800 font-bold">
+                    <i class="fas fa-home mr-2"></i>Home
+                  </a>
+                </li>
+                <li>
+                  <div class="flex items-center">
+                    <i class="fas fa-chevron-right text-gray-400 mx-2 text-xs"></i>
+                    <span class="text-gray-500 font-medium">Dashboard</span>
+                  </div>
+                </li>
+              </ol>
+            </nav>
+          </div>
+
+          <!-- Stats Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            <!-- Remaining Time Card -->
+            <div class="bg-white shadow-xl rounded-2xl p-6 border-l-8 border-green-500 flex items-center shadow-green-100 hover:shadow-2xl transition-all">
+              <div class="flex-shrink-0 bg-green-100 p-4 rounded-xl">
+                <i class="fas fa-hourglass-half fa-2x text-green-600"></i>
+              </div>
+              <div class="ml-5">
+                <div class="text-xs font-bold text-gray-400 uppercase tracking-widest">Remaining OJT Time</div>
+                <div class="text-3xl font-black text-gray-900">420.5 <span class="text-lg font-normal text-gray-400">hours</span></div>
+              </div>
+            </div>
+
+            <!-- Total Days Card -->
+            <div class="bg-white shadow-xl rounded-2xl p-6 border-l-8 border-blue-500 flex items-center shadow-blue-100 hover:shadow-2xl transition-all">
+              <div class="flex-shrink-0 bg-blue-100 p-4 rounded-xl">
+                <i class="fas fa-calendar-check fa-2x text-blue-600"></i>
+              </div>
+              <div class="ml-5">
+                <div class="text-xs font-bold text-gray-400 uppercase tracking-widest">Total Days Rendered</div>
+                <div class="text-3xl font-black text-gray-900">12 <span class="text-lg font-normal text-gray-400">days</span></div>
+              </div>
+            </div>
+
+            <!-- Pending Tasks -->
+            <div class="bg-white shadow-xl rounded-2xl p-6 border-l-8 border-yellow-500 flex items-center shadow-yellow-100 hover:shadow-2xl transition-all">
+              <div class="flex-shrink-0 bg-yellow-100 p-4 rounded-xl">
+                <i class="fas fa-tasks fa-2x text-yellow-600"></i>
+              </div>
+              <div class="ml-5">
+                <div class="text-xs font-bold text-gray-400 uppercase tracking-widest">Pending Tasks</div>
+                <div class="text-3xl font-black text-gray-900">02 <span class="text-lg font-normal text-gray-400">items</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Announcement Section -->
+          <div class="mb-8">
+            <div class="bg-white shadow-2xl rounded-3xl p-8 announcement-card relative overflow-hidden">
+              <!-- Decorative background element -->
+              <div class="absolute -right-16 -top-16 w-64 h-64 bg-blue-50 rounded-full opacity-50"></div>
+              
+              <div class="relative z-10">
+                <div class="flex justify-between items-center mb-6">
+                  <div class="flex items-center">
+                    <div class="bg-blue-600 p-3 rounded-2xl shadow-lg mr-4">
+                      <i class="fas fa-bullhorn text-white text-xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-black text-gray-900">Latest Announcement</h2>
+                  </div>
+                  <i class="fas fa-bell text-blue-600 text-3xl shake"></i>
+                </div>
+                
+                <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+                  <div class="flex items-center mb-4">
+                    <img src="../img/user-icn.png" class="w-10 h-10 rounded-full border-2 border-white shadow-md mr-3">
+                    <div>
+                      <p class="text-sm font-bold text-gray-900">Admin Sarah Jenkins</p>
+                      <p class="text-xs text-gray-400 font-medium">March 22, 2026 • 09:00 AM</p>
+                    </div>
+                  </div>
+                  
+                  <h3 class="text-xl font-bold text-blue-600 mb-3">Updated OJT Weekly Report Guidelines</h3>
+                  <p class="text-gray-700 leading-relaxed mb-6 font-medium">
+                    Attention all interns! Please be advised that starting next week, all DTR submissions must include a clear photo of your signed timesheet. Failure to provide this will result in a delay in your hour verification.
+                  </p>
+                  
+                  <div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-white mb-4 group cursor-pointer">
+                    <img src="../img/logo/src-logo.jpg" class="w-full h-48 object-cover transition-transform group-hover:scale-105" alt="Announcement Banner">
+                  </div>
+                  
+                  <div class="flex justify-between items-center mt-6">
+                    <span class="bg-blue-100 text-blue-700 text-xs font-black px-4 py-2 rounded-full uppercase tracking-tighter">Important</span>
+                    <button class="text-blue-600 font-bold hover:underline">View All Documents</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer-container"></div>
+    </div>
+  </div>
+
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="../js/ruang-admin.min.js"></script>
+  <script src="../js/components.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="../img/logo/attnlg.jpg" rel="icon">
+  <title>Manage Announcements - Demo</title>
+  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/ruang-admin.min.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+  <div id="wrapper">
+    <div id="sidebar-container"></div>
+    <div id="content-wrapper" class="d-flex flex-column">
+      <div id="content">
+        <div id="topbar-container"></div>
+
+        <div class="container-fluid" id="container-wrapper">
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Manage Announcements</h1>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+              <li class="breadcrumb-item active">Announcements</li>
+            </ol>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="card mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Post New Announcement</h6>
+                </div>
+                <div class="card-body">
+                  <form id="annForm">
+                    <div class="form-group mb-3">
+                        <label class="form-control-label">Message Content<span class="text-danger ml-2">*</span></label>
+                        <textarea class="form-control" name="content" rows="4" placeholder="Type announcement here..." required></textarea>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="form-control-label">Relevant Image (Optional)</label>
+                        <input type="file" class="form-control" name="image">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Post Announcement</button>
+                  </form>
+                </div>
+              </div>
+
+              <div class="card mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">All Announcements</h6>
+                </div>
+                <div class="table-responsive p-3">
+                    <table class="table align-items-center table-flush table-hover">
+                      <thead class="thead-light">
+                        <tr>
+                          <th>Admin</th>
+                          <th>Content</th>
+                          <th>Status</th>
+                          <th>Date</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Admin Sarah</td>
+                          <td>Updated OJT Weekly Report Guidelines...</td>
+                          <td><span class="badge badge-success">Active</span></td>
+                          <td>2026-03-22</td>
+                          <td>
+                              <a href="#" class="btn btn-sm btn-info"><i class="fas fa-edit"></i></a>
+                              <a href="#" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer-container"></div>
+    </div>
+  </div>
+
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="../js/ruang-admin.min.js"></script>
+  <script src="../js/components.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#annForm').on('submit', function(e) { e.preventDefault(); alert('Announcement posted! (Demo)'); this.reset(); });
+    });
+  </script>
+</body>
+
+</html>

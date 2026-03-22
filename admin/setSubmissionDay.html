@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="../img/logo/attnlg.jpg" rel="icon">
+  <title>Set Submission Day - Demo</title>
+  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/ruang-admin.min.css" rel="stylesheet">
+</head>
+<body id="page-top">
+  <div id="wrapper">
+    <div id="sidebar-container"></div>
+    <div id="content-wrapper" class="d-flex flex-column">
+      <div id="content">
+        <div id="topbar-container"></div>
+        <div class="container-fluid" id="container-wrapper">
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Submission Day Settings</h1>
+          </div>
+          <div class="card mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Set DTR Weekly Submission Day</h6>
+            </div>
+            <div class="card-body">
+              <form onsubmit="event.preventDefault(); alert('Submission Day Updated (Demo)!');">
+                <div class="form-group row">
+                  <div class="col-md-6">
+                    <label>Submission Day limit</label>
+                    <select class="form-control" name="submissionDay">
+                      <option value="Monday">Monday</option>
+                      <option value="Tuesday">Tuesday</option>
+                      <option value="Wednesday">Wednesday</option>
+                      <option value="Thursday">Thursday</option>
+                      <option value="Friday" selected>Friday</option>
+                      <option value="Saturday">Saturday</option>
+                      <option value="Sunday">Sunday</option>
+                    </select>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Save Settings</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer-container"></div>
+    </div>
+  </div>
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/ruang-admin.min.js"></script>
+  <script src="../js/components.js"></script>
+</body>
+</html>
